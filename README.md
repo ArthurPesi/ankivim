@@ -1,10 +1,10 @@
-This project consists of a python script to create anki cards based on the contents of a text file. The file must be formated like this:
-Deck 1 name
-Front side - back side //will be added to deck 1
-Front side - back side //will be added to deck 1
-Deck 2 name
-Front side - back side //will be added to deck 2
-Front side - back side //will be added to deck 2
+This project consists of a python script to create anki cards based on the contents of a text file. The file must be formated like this:<br>
+Deck 1 name<br>
+Front side - back side //will be added to deck 1<br>
+Front side - back side //will be added to deck 1<br>
+Deck 2 name<br>
+Front side - back side //will be added to deck 2<br>
+Front side - back side //will be added to deck 2<br>
 
 The script also attaches a sound file with the pronunciation for the text on the front side.
 
