@@ -1,0 +1,22 @@
+#!/bin/bash
+
+opened=0
+if ! pgrep -x "anki" > /dev/null
+then
+    opened=1
+    nohup anki &
+    sleep 3
+fi
+
+path="/home/pesi/dsa/ankivim"
+cd $path
+source virenv/bin/activate
+if ! python3 ankivim.py
+then
+    read -n 1 -s -r -p 'an error has occurred! :('
+fi
+
+if opened
+then
+    killall 'anki'
+fi
